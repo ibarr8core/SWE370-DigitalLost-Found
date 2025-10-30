@@ -1,0 +1,15 @@
+plugins {
+    id "application"
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = "edu.csusm.digitalfound.Main"
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(17) }
+}

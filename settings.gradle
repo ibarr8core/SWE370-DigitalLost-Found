@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = 'SWE370-DigitalLost-Found'
-include('app')
+
