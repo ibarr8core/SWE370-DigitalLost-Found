@@ -31,6 +31,7 @@ The application features a simple Swing GUI for interaction and can be expanded 
 ./gradlew build        # (Linux / macOS)
 gradlew.bat build      # (Windows)
 
+---
 ./gradlew run
 # or
 gradlew.bat run
