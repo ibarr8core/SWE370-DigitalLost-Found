@@ -35,6 +35,7 @@ gradlew.bat build      # (Windows)
 # or
 gradlew.bat run
 
+#### structure
 SWE370-DigitalLost-Found/
 ├── src/
 │   └── main/
@@ -54,7 +55,7 @@ SWE370-DigitalLost-Found/
 └── README.md
 
 
-#### Deploy to GitHub Pages
+#### how to deploy
 git add .
 git commit -m "Your commit message"
 git push origin main
