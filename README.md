@@ -54,7 +54,7 @@ SWE370-DigitalLost-Found/
 └── README.md
 
 
-Deploy to GitHub Pages
+#### Deploy to GitHub Pages
 git add .
 git commit -m "Your commit message"
 git push origin main
