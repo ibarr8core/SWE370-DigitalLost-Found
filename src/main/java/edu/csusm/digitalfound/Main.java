@@ -1,5 +1,5 @@
-package edu.csusm.digitalfound;
-
+ package edu.csusm.digitalfound;
+ 
 import javax.swing.*;
 
 public class Main {
