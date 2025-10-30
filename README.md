@@ -30,3 +30,44 @@ The application features a simple Swing GUI for interaction and can be expanded 
 # From the repo root
 ./gradlew build        # (Linux / macOS)
 gradlew.bat build      # (Windows)
+
+./gradlew run
+# or
+gradlew.bat run
+
+SWE370-DigitalLost-Found/
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── edu/csusm/digitalfound/ <-------- This the root, add files to the room .\gradlew.bat build and .\gradlew.bat run to run the files 
+│       │       ├── Main.java
+│       │       ├── ui/          ← GUI components
+│       │       ├── model/       ← data structures / item classes
+│       │       └── logic/       ← core functionality
+│       └── resources/            ← images, icons, configs
+├── build.gradle
+├── settings.gradle
+├── gradlew / gradlew.bat
+├── gradle/wrapper/
+│   ├── gradle-wrapper.jar
+│   └── gradle-wrapper.properties
+└── README.md
+
+
+Deploy to GitHub Pages
+git add .
+git commit -m "Your commit message"
+git push origin main
+
+
+🧱 CI / CD (GitHub Actions)
+
+The repo includes an automated workflow:
+
+Builds on every push and PR to main
+
+Runs Gradle build (./gradlew build)
+
+Ensures the wrapper JAR is committed
+
+JDK version: 17 (Temurin)
