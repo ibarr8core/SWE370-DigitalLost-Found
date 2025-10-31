@@ -8,7 +8,7 @@ public class Main {
             JFrame frame = new JFrame("Digital Lost & Found");
             frame.setSize(600, 450);
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.add(new JLabel("Welcome to Digital Lost & Found!", SwingConstants.CENTER));
+            frame.add(new JLabel("Digital Lost & Found!", SwingConstants.CENTER));
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
         });
