@@ -13,3 +13,8 @@ application {
 java {
     toolchain { languageVersion = JavaLanguageVersion.of(17) }
 }
+
+dependencies {
+    // MySQL JDBC driver so your app can talk to MySQL
+    implementation 'mysql:mysql-connector-java:8.0.33'
+}
