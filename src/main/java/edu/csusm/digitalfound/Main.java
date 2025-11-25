@@ -14,7 +14,6 @@ public class Main {
     private static final Color TEXT_DARK = new Color(0x003050);
 
     public static void main(String[] args) {
-<<<<<<< HEAD
         SwingUtilities.invokeLater(Main::createMainMenu);
     }
 
@@ -100,16 +99,15 @@ public class Main {
         quickPanel.setBackground(Color.WHITE);
         quickPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        //Add 5 empty gray squares
+        // Add 5 empty gray squares
         for (int i = 0; i < 5; i++) {
-        JPanel box = new JPanel();
-        box.setBackground(MIST_GRAY);
-        box.setPreferredSize(new Dimension(100, 100));
-         quickPanel.add(box);
+            JPanel box = new JPanel();
+            box.setBackground(MIST_GRAY);
+            box.setPreferredSize(new Dimension(100, 100));
+            quickPanel.add(box);
         }
 
         content.add(quickPanel);
-
 
         // ===== BUTTON ACTIONS =====
         reportButton.addActionListener(e -> openReportWindow());
@@ -126,13 +124,6 @@ public class Main {
         button.setBackground(primary ? COUGAR_BLUE : Color.WHITE);
         button.setBorder(BorderFactory.createLineBorder(COUGAR_BLUE, 2, true));
         button.setPreferredSize(new Dimension(260, 120));
-    }
-
-    private static JLabel makeCategoryLabel(String text) {
-        JLabel label = new JLabel(text, SwingConstants.CENTER);
-        label.setFont(new Font("SansSerif", Font.PLAIN, 16));
-        label.setForeground(TEXT_DARK);
-        return label;
     }
 
     // ===== OPEN WINDOWS =====
@@ -161,15 +152,5 @@ public class Main {
         claimsFrame.add(new ManageClaimsController());
         claimsFrame.setLocationRelativeTo(null);
         claimsFrame.setVisible(true);
-=======
-        SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("Digital Lost & Found");
-            frame.setSize(600, 450);
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.add(new JLabel("Digital Lost & Found!", SwingConstants.CENTER));
-            frame.setLocationRelativeTo(null);
-            frame.setVisible(true);
-        });
->>>>>>> 394a90df9dfc447ac6cda7a096b624aed64494ae
     }
 }
