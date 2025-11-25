@@ -14,6 +14,7 @@ public class Main {
     private static final Color TEXT_DARK = new Color(0x003050);
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         SwingUtilities.invokeLater(Main::createMainMenu);
     }
 
@@ -160,5 +161,15 @@ public class Main {
         claimsFrame.add(new ManageClaimsController());
         claimsFrame.setLocationRelativeTo(null);
         claimsFrame.setVisible(true);
+=======
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Digital Lost & Found");
+            frame.setSize(600, 450);
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.add(new JLabel("Digital Lost & Found!", SwingConstants.CENTER));
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
+        });
+>>>>>>> 394a90df9dfc447ac6cda7a096b624aed64494ae
     }
 }
